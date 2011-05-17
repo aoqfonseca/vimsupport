@@ -2,15 +2,15 @@ colorscheme molokai
 
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Inconsolata\ 30
+    set guifont=Inconsolata\ 16
   elseif has("gui_photon")
-    set guifont=Inconsolata:s30
+    set guifont=Inconsolata:s16
   elseif has("gui_kde")
-    set guifont=Inconsolata/30/-1/5/50/0/0/0/1/0
+    set guifont=Inconsolata/16/-1/5/50/0/0/0/1/0
   elseif has("x11")
     set guifont=-*-inconsolata-medium-r-normal-*-*-180-*-*-m-*-*
   else
-    set guifont=Inconsolata:h30
+    set guifont=Inconsolata:h16
   endif
 endif
 
@@ -27,9 +27,9 @@ set nocompatible
 
 set modelines=0
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set number
 set expandtab
 
@@ -70,14 +70,6 @@ nmap <leader>l :set list!<CR>
 set list
 set listchars=tab:▸\ ,eol:¬
 
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
