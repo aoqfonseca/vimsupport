@@ -2,15 +2,15 @@ colorscheme molokai
 
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Inconsolata\ 16
+    set guifont=Inconsolata\ 18
   elseif has("gui_photon")
-    set guifont=Inconsolata:s16
+    set guifont=Inconsolata:s18
   elseif has("gui_kde")
-    set guifont=Inconsolata/16/-1/5/50/0/0/0/1/0
+    set guifont=Inconsolata/18/-1/5/50/0/0/0/1/0
   elseif has("x11")
     set guifont=-*-inconsolata-medium-r-normal-*-*-180-*-*-m-*-*
   else
-    set guifont=Inconsolata:h16
+    set guifont=Inconsolata:h18
   endif
 endif
 
@@ -43,7 +43,6 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-set visualbell
 set cursorline
 set ttyfast
 set ruler
@@ -63,7 +62,8 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 set wrap
-set textwidth=79
+set textwidth=80
+set fuopt=maxvert,maxhorz
 set formatoptions=qrn1
 
 nmap <leader>l :set list!<CR>
@@ -95,8 +95,6 @@ nnoremap <C-l> <C-w>l
 
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
 
-nmap <silent> <c-n> :NERDTreeToggle<CR>
-
 au BufNewFile,BufRead *.less set filetype=less
 
 "set guioptions-=m  "remove menu bar
@@ -119,5 +117,4 @@ function TrimWhiteSpace()
 :endfunction
 
 map <F2> :call TrimWhiteSpace()<CR>
-map <F1> :tabnew<CR> 
-set t_vb= 
+map <F1> :tabnew<CR>
