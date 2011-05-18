@@ -13,3 +13,6 @@
 [submodule ".vim/puppet-vim"]
 	path = .vim/puppet-vim
 	url = git://github.com/ajf/puppet-vim.git
+[submodule ".vim/bundle/NERD_tree"]
+	path = .vim/bundle/NERD_tree
+	url = https://github.com/scrooloose/nerdtree.git
