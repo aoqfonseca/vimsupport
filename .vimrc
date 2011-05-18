@@ -109,6 +109,8 @@ augroup END
 
 nmap <silent> <Leader>y :CommandTFlush<CR>
 nmap <silent> <Leader>t :CommandT<CR>
+nmap <silent> <c-p> :NERDTreeToggle<CR>
+nmap <silent> <c-a> :NERDTree<CR>
 
 " Removes trailing spaces
 function TrimWhiteSpace()
@@ -118,3 +120,4 @@ function TrimWhiteSpace()
 
 map <F2> :call TrimWhiteSpace()<CR>
 map <F1> :tabnew<CR>
+
