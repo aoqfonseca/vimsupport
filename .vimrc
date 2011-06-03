@@ -2,15 +2,15 @@ colorscheme molokai
 
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Inconsolata\ 16
+    set guifont=Monaco\ 13
   elseif has("gui_photon")
-    set guifont=Inconsolata:s16
+    set guifont=Monaco:s13
   elseif has("gui_kde")
-    set guifont=Inconsolata/16/-1/5/50/0/0/0/1/0
+    set guifont=Monaco/13/-1/5/50/0/0/0/1/0
   elseif has("x11")
     set guifont=-*-inconsolata-medium-r-normal-*-*-180-*-*-m-*-*
   else
-    set guifont=Inconsolata:h16
+    set guifont=Monaco:h13
   endif
 endif
 
