@@ -2,15 +2,15 @@ colorscheme molokai
 
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Monaco\ 13
+    set guifont=Monaco\ 14
   elseif has("gui_photon")
-    set guifont=Monaco:s13
+    set guifont=Monaco:s14
   elseif has("gui_kde")
-    set guifont=Monaco/13/-1/5/50/0/0/0/1/0
+    set guifont=Monaco/14/-1/5/50/0/0/0/1/0
   elseif has("x11")
     set guifont=-*-inconsolata-medium-r-normal-*-*-180-*-*-m-*-*
   else
-    set guifont=Monaco:h13
+    set guifont=Monaco:h14
   endif
 endif
 
@@ -27,9 +27,9 @@ set nocompatible
 
 set modelines=0
 
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set number
 set expandtab
 
